@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes pop{
+    0%{
+        transform: scale(1);
+        
+    }
+    25%{
+        transform: 1.3;
+        background: crimson;
+        transform: skew(1);
+        border-radius: 10px;
+        border: 1px solid green;
+    }
+    50%{
+        transform: rotate(45deg);
+        background: chartreuse;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    animation: pop 4s ease-out 1s 4s alternate;
+    
+}

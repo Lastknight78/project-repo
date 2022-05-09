@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="media query.css"> 
+    
+</head>
+<body>
+    <form>
+        
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
+        <select>
+            <option>select a course</option>
+            <option>javascript</option>
+            <option>python</option>
+            <option>java</option>
+        </select>
+
+        <button type="submit">register</button>
+        <button type="reset">cancel</button>
+        
+        <input type="text" list="countries" autocomplete="off">
+        <datalist id="countries">
+            <option data-value="1">Australia</option>
+            <option>Canada</option>
+            <option>Usa</option>
+            <option>India</option>
+        </datalist>
+        <div>
+            <label for="front-end" class="label-inline">front-end</label>
+            <input type="checkbox" id="front-end" disabled>
+        </div>
+        <div>
+            <label for="back-end" class="label-inline">back-end</label>
+            <input type="checkbox" id="back-end">
+        </div>
+        <div>
+            <input type="radio" name="membership" class="gold">
+            <label for="silver" class="label-inline">silver</label>
+        </div>
+        <div>
+            <input type="radio" name="membership" class="gold" checked>
+            <label for="gold" class="label-inline">gold</label>
+        </div>
+        <input type="range" min="0" max="100" value="70">
+        <input type="file" accept=".jpg,.pngw">
+        <input type="number" required min="0" max="5">
+        <button type="submit">submit</button>
+
+        </form>
+        <form action="https://formspree.io/f/mayabznr" method="POST">
+            <input type="text" placeholder="name" name="name">
+            <input type="email" placeholder="email" name="email">
+            <button type="submit">Submit</button>
+        </form>
+    
+</body>
+</html>
